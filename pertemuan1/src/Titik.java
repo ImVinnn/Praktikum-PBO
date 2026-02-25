@@ -1,3 +1,5 @@
+import javax.imageio.plugins.tiff.TIFFDirectory;
+
 public class Titik {
     /**************ATRIBUT****************/
     double absis;
@@ -5,9 +7,13 @@ public class Titik {
 
     /**************METHOD*****************/
     //konstruktor untuk membuat titik (0,0)
+    Titik(double absis, double ordinat){
+        this.absis = absis;
+        this.ordinat = ordinat;
+    }
+
     Titik(){
-        absis = 0;
-        ordinat = 0;
+        this(0,0);
     }
 
     //mengembalikan nilai absis
@@ -40,4 +46,26 @@ public class Titik {
     void printTitik(){
         System.out.println("Titik (" + absis + "," + ordinat + ")");
     }
+
+    void setRefleksiY(){
+        this.absis = this.absis*(-1);
+    }
+
+    void setRefleksiX(){
+        this.ordinat = this.ordinat*(-1);
+    }
+
+    public Titik getRefleksiX(){
+        return new Titik(this.absis, -this.ordinat);
+    }
+
+    public Titik getRefleksiY(){
+        return new Titik(-this.absis, this.ordinat);
+    }
+
+    double getjarak(Titik T){
+        return Math.sqrt(Math.pow((this.absis - T.absis), 2) + Math.pow((this.ordinat - T.ordinat), 2));
+    }
+
+
 } //end class Titik
