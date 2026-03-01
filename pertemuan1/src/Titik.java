@@ -67,5 +67,24 @@ public class Titik {
         return Math.sqrt(Math.pow((this.absis - T.absis), 2) + Math.pow((this.ordinat - T.ordinat), 2));
     }
 
+    // Menghitung jarak titik ke pusat (0,0)
+    double getJarakPusat(){
+        return Math.sqrt(Math.pow(this.absis, 2) + Math.pow(this.ordinat, 2));
+}
+
+    // Menentukan kuadran titik
+    int getKuadran(){
+        if (absis > 0 && ordinat > 0){
+            return 1;
+        } else if (absis < 0 && ordinat > 0){
+            return 2;
+        } else if (absis < 0 && ordinat < 0){
+            return 3;
+        } else if (absis > 0 && ordinat < 0){
+            return 4;
+        } else {
+            return 0; // jika berada di sumbu
+        }
+    }
 
 } //end class Titik
