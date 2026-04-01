@@ -1,6 +1,12 @@
+// Nama : Mohammad Banyuputra Eka Pramudhita
+// NIM : 24060124140193
+// Lab : PBO B1
+// File : Pengusaha.java
+// Deskripsi : Kelas untuk manusia dengan profesi pengusaha yang mengimplementasikan interface Pajak
+
 import java.time.LocalDate;
 
-public class Pengusaha extends Manusia {
+public class Pengusaha extends Manusia implements Pajak {
     private String npwp;
     private LocalDate tglMulai;
     private static int counterPengusaha = 0;
@@ -23,6 +29,7 @@ public class Pengusaha extends Manusia {
     public double hitungPajak(){
         return 0.15 * pendapatan;
     }
+
 
     public void cetakInfo(){
         super.cetakInfo();

@@ -1,6 +1,12 @@
+// Nama : Mohammad Banyuputra Eka Pramudhita
+// NIM : 24060124140193
+// Lab : PBO B1
+// File : PNS.java
+// Deskripsi : Kelas untuk manusia dengan profesi PNS yang mengimplementasikan interface Pajak
+
 import java.time.LocalDate;
 
-public class PNS extends Manusia {
+public class PNS extends Manusia implements Pajak {
     private String nip;
     private LocalDate tglMulai;
     private static int counterPNS = 0;

@@ -1,6 +1,8 @@
 // Nama : Mohammad Banyuputra Eka Pramudhita
 // NIM : 24060124140193
 // Lab : PBO B1
+// File : Lingkaran.java
+// Deskripsi : Kelas untuk bangun datar lingkaran yang mengimplementasikan interface IResize
 
 public class Lingkaran extends BangunDatar implements IResize {
     private double jari;

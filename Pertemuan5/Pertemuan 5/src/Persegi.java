@@ -1,6 +1,8 @@
 // Nama : Mohammad Banyuputra Eka Pramudhita
 // NIM : 24060124140193
 // Lab : PBO B1
+// File : Persegi.java
+// Deskripsi : Kelas untuk bangun datar persegi yang mengimplementasikan interface IResize
 
 public class Persegi extends BangunDatar implements IResize {
     private double sisi;

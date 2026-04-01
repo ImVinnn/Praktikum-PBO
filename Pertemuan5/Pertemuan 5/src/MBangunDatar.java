@@ -1,3 +1,8 @@
+// Nama : Mohammad Banyuputra Eka Pramudhita
+// NIM : 24060124140193
+// Lab : PBO B1
+// File : MBangunDatar.java 
+
 public class MBangunDatar {
     public static void main(String[] args) {
 

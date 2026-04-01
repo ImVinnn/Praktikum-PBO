@@ -1,6 +1,12 @@
+// Nama : Mohammad Banyuputra Eka Pramudhita
+// NIM : 24060124140193
+// Lab : PBO B1
+// File : Petani.java
+// Deskripsi : Kelas untuk manusia dengan profesi petani yang mengimplementasikan interface Pajak
+
 import java.time.LocalDate;
 
-public class Petani extends Manusia {
+public class Petani extends Manusia implements Pajak {
     private String asal;
     private LocalDate tglMulai;
     private static int counterPetani = 0;
