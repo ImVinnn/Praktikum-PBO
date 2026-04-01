@@ -1,6 +1,8 @@
 // Nama : Mohammad Banyuputra Eka Pramudhita
 // NIM : 24060124140193
 // Lab : PBO B1
+// File : BangunDatar.java
+// Deskripsi : Kelas abstrak untuk bangun datar
 
 public abstract class BangunDatar {
     protected String warna;

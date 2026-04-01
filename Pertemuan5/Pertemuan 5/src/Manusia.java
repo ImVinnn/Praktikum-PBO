@@ -1,6 +1,8 @@
 // Nama : Mohammad Banyuputra Eka Pramudhita
 // NIM : 24060124140193
 // Lab : PBO B1
+// File : Manusia.java
+// Deskripsi : Kelas abstrak untuk manusia yang menjadi superclass dari PNS, Petani
 
 import java.time.LocalDate;
 import java.time.Period;
@@ -32,8 +34,6 @@ public abstract class Manusia {
     public int hitungMasaKerja(LocalDate mulai){
         return Period.between(mulai, LocalDate.now()).getYears();
     }
-
-    public abstract double hitungPajak();
 
     public void cetakInfo(){
         System.out.println("Nama: " + nama);

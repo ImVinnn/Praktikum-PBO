@@ -1,3 +1,8 @@
+// Nama : Mohammad Banyuputra Eka Pramudhita
+// NIM : 24060124140193
+// Lab : PBO B1
+
+
 import java.time.LocalDate;
 
 public class MManusia {
